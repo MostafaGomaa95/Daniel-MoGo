@@ -506,15 +506,6 @@ header h1::after {
   }
 }
 
-@media (max-width: 768px) {
-
-  header .header-content h1,
-  header .header-content span {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-}
-
 /* ===About=== */
 #about .about-photo {
   position: relative;
@@ -595,6 +586,7 @@ header h1::after {
     }
   }
 #about .container .about-me .btn-dark {
+  
   --bs-btn-color: #fff;
   --bs-btn-hover-color: #343434;
   --bs-btn-hover-bg: #fff;
@@ -1048,4 +1040,18 @@ footer p {
   line-height: 1.25rem;
   color: #748182;
   margin: 0;
+}
+
+/* ===MediaZone=== */
+@media (max-width: 768px) {
+
+  header .header-content h1,
+  header .header-content span {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  #about .container .about-me .btn{
+
+    --bs-btn-font-size: 0.6rem;
+  }
 }
